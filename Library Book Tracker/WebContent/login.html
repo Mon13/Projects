@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p align="center" font-size="500pt"><u><b> Login to Library Management System</b></u></p>
+
+<div>
+
+  <form action="/librarymanagement/login" method="post">
+  <label><b><u> User Name: </u></b></label>
+    <input type="text" name="name" size="30" required="yes";></br></br>
+     
+     <label><u><b> Password: </b></u></label>
+     <input type="password" name="pwd" size="30" required="yes";></br></br>
+     
+     <label class="textlabel" for="tagsInput"><u><b>User Type</b></u></label>
+  	 <select name="utype">
+	 	<option value="1">Student</option>
+		<option value="2">Teacher</option>
+		<option value="3">Parent</option>
+		<option value="4">Admin</option>
+	 </select></br></br>
+	
+     <input type="submit" value="Submit"></br>
+
+    <p align="center" margin-left="50px"> Create a new account </p>
+    <p  align="center"><a href="Register.html"> Register</a></p>
+  </form>
+</div>
+</body>
+</html>
+
+
+<form method="get" action="http://www.google.com/search">
+
+<div style="border:2px dotted black;padding:4px;width:15em;">
+<table border="0" align="center" cellpadding="0">
+<tr><td>
+<input type="text"   name="q" size="25" style="color:#808080;"
+maxlength="255" value="Google site search"
+onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='black';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+<input type="submit" value="Go!" />
+<input type="hidden" name="sitesearch" value="yoursite.com" /></td></tr>
+</table>
+</div>
+
+</form>

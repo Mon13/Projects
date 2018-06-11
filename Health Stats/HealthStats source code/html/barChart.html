@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Bar Chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+</head>
+<body>
+<canvas id="myChart" width="300" height="400"></canvas>
+<script>
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["season", "age", "virus"],
+        datasets: [{
+            label: 'Influenza Stats',
+            data: [12, 19, 3],
+            backgroundColor: [
+                'rgba(40, 89, 163, 0.8)',
+                'rgba(38, 142, 52, 0.8)',
+                'rgba(224, 219, 71, 0.8)',
+                'rgba(209, 25, 52, 0.8)',
+                'rgba(153, 77, 62, 0.8)',
+                'rgba(62, 153, 153, 0.8)'
+            ],
+            borderColor: [
+                'rgba(12, 14, 17,1)',
+                'rgba(12, 14, 17, 1)',
+                'rgba(12, 14, 17, 1)',
+                'rgba(12, 14, 17,1)',
+                'rgba(12, 14, 17, 1)',
+                'rgba(12, 14, 17, 1)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive : true, 
+        maintainAspectRatio:false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
+</body>
+</html>
+
+

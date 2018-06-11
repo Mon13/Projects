@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<title> Left Navigation bar </title>
+		<style>
+			#wrap {
+					width: 40px; 
+					height: 100px; 
+    				padding-bottom: 20px;
+					margin: -1; 
+					z-index: 1;
+					position: fixed;
+					background-color: #660b03;
+				  }
+			.navbar	{
+					height: 50px;
+				    padding: 0;
+				    padding-bottom: 10px;
+					margin: 0;
+					position: fixed; 
+					border-right: 2px solid black; 
+				    z-index: 12;
+					}
+			.navbar li 	{
+		            padding-bottom: 40px;
+					height: auto;
+					width: 130px;  
+		            object-position: top;
+					text-align: center;  
+					list-style: none;  
+					font: normal bold 12px/1.2em Arial, Verdana, Helvetica;  
+					padding: 0;
+					margin: 0;
+					background-color: #660b03;
+		            }
+			.navbar a	{							
+					padding: 18px 0;  
+					border-left: 1px solid #660b03;
+					border-right: 1px solid #660b03;
+					text-decoration: none; 
+					color: white; 
+					display: block;
+					}
+
+			.navbar li:hover, a:hover {
+    				background-color: #666;
+					}
+
+			.navbar li ul 	{
+					display: none;
+					margin: 0; 
+					padding: 0; 	
+			        margin-left:130px;
+			        float:left;
+			        margin-top: -50px;
+			        height: 0;
+					}				
+
+			.navbar li:hover ul 	{
+                        display: block; 
+                        z-index: 12;
+                        padding-left: 1px;
+                       
+                     }
+
+			.navbar li ul li {
+    					background-color: #666;
+					}
+
+			.navbar li ul li a 	{
+					border-left: 1px solid black;
+					border-right: 1px solid black;
+					border-top: 1px solid black;
+			        z-index: 1001;
+			        color: black;
+					}
+
+			.navbar li ul li a:hover {
+			    background-color: white;
+			    z-index: 1000;
+			}
+			html{
+				background-color: black;
+				text-align: center;
+				display: flex;
+			}
+
+		</style>
+	</head>
+	<body>
+	<br>
+		<div id="wrap">
+		  <ul class="navbar">
+		  	 <li><a href="introduction.html" target="content">Introduction</a>  
+			 <li><a href="">DataSet</a>
+				<ul>
+                    <li><a href="">CardioVascular</a></li>
+				    <li><a href="">Influenza</a></li>
+				    <li><a href="">Diabetes</a></li>
+                    <li><a href="">Visual Impairment</a></li>
+                    <li><a href="">Arthritis</a></li>
+				</ul>         
+			 </li>
+			 <li><a href="">Chart Type</a>
+				<ul>
+                    <li><a href="lineChart.html" target="content">Line</a></li>
+				    <li><a href="pieChart.html" target="content">Pie</a></li>
+				    <li><a href="barChart.html" target="content">Bar</a></li>
+                    <li><a href="stackedChart.html" target="content">Stacked</a></li>
+				</ul>         
+			 </li>
+			 <li><a href="">Filter by</a>
+				<ul>
+                    <li><a href=""> Year </a></li>
+				   <li><a href="" > Risk factor </a></li>
+                    <li><a href=""> Health Condition </a></li>
+                    <li><a href=""> Age </a></li>
+	   
+				</ul>         
+			 </li>
+			 <li><a href="">Group by</a>
+				<ul>
+				   <li><a href="">Year</a></li>
+                    <li><a href="">Age</a></li>
+                   
+				</ul>         
+			 </li>
+			     <li><a href="">Statistics</a>
+			</ul>
+       </div>
+	</body>
+</html>

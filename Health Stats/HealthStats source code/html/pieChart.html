@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Line Chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+</head>
+<body>
+    <canvas id="myChart" width="300" height="400"></canvas>
+<script>
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ["season", "age", "virus"],
+        datasets: [{
+            label: 'Influenza Stats',
+            data: [12, 19, 3],
+            backgroundColor: [
+                'rgba(45, 97, 181, 0.8)',
+                'rgba(52, 181, 86, 0.8)',
+                'rgba(198, 78, 41, 0.8)',
+            ],
+            borderColor: [
+                'rgba(12, 14, 17,1)',
+                'rgba(12, 14, 17, 1)',
+                'rgba(12, 14, 17, 1)',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive : true, 
+        maintainAspectRatio:false,
+    }
+});
+</script>
+</body>
+</html>

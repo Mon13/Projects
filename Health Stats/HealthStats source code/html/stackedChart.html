@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Line Chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+</head>
+<body>
+    <canvas id="myChart" width="300" height="400"></canvas>
+<script>
+var dataPack1 = [21000, 22000, 26000];
+var dataPack2 = [1000, 1200, 1300];
+var dates = ["2008-09", "2007-08", "2006-07"];
+
+
+
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: dates,
+        datasets: [
+        {
+            label: 'virus',
+            data: dataPack1,
+                        backgroundColor: "rgba(198, 78, 41, 0.8)",
+                        hoverBackgroundColor: "rgba(198, 78, 41, 0.8)",
+                        hoverBorderWidth: 2,
+                        hoverBorderColor: 'lightgrey'
+        },
+        {
+            label: 'virus',
+            data: dataPack2,
+                        backgroundColor: "rgba(45, 97, 181, 0.8)",
+                        hoverBackgroundColor: "rgba(45, 97, 181, 0.8)",
+                        hoverBorderWidth: 2,
+                        hoverBorderColor: 'lightgrey'
+        },
+        ]
+    },
+    options: {
+        responsive : true, 
+        maintainAspectRatio:false,
+        yAxes: [{
+                stacked: true,
+                ticks: {
+                    beginAtZero:true
+                }
+            }],
+        xAxes: [{
+                stacked: true,
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+    }
+});
+</script>
+</body>
+</html>
