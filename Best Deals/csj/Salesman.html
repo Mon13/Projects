@@ -1,0 +1,95 @@
+<div id="body">
+
+
+
+        <section id="content">
+
+	   <article class="expanded">
+            <center>
+
+            <a href = 'SignIn'> Register New Users Here</a>
+    <br>
+    <br>
+
+           <h3>Orders can be added, deleted and modified below </h3>
+            <br>
+            <form action="AddOrder" method=post>
+           
+             <label class="label">Customer's Name  </label> 
+            <input type="userName" class="field" name="userName">
+             <br>
+             
+             <label class="label">Order Name </label> 
+            <input type="orderName" class="field" name="orderName">
+             <br>
+
+             <label class="label">Order Price </label> 
+            <input type="orderPrice" class="field" name="orderPrice">
+             <br>
+
+            <label class="label">Customer's Address</label> 
+            <input type="userAddress" class="field" name="userAddress">
+            <br>
+             <label class="label">Credit Card Number</label> 
+            <input type="creditCardNo" class="field" name="creditCardNo">
+             <br>
+           
+                <input type="submit" style="background-color:#DE2D3A;margin-left:45px;border-radius:5px;color:#fff;width:110px;height:40px" value="Add Order">
+                <input type="hidden" name="type" value="add">
+            </form>
+             <br>
+            <br>
+            <br>
+
+
+            <br>
+            <form action="DeleteOrder" method="get">
+             <label class="label">Order ID </label> 
+            <input type="OrderId" class="field" name="OrderId">
+            <br>
+
+           
+                <input type="submit" style="background-color:#DE2D3A;margin-left:45px;border-radius:5px;color:#fff;width:110px;height:40px" value="Delete Order">
+               
+                   <input type="hidden" name="OrderId"/>
+            </form>
+           
+            <br>
+            <br>
+
+
+            <br>
+            <form action="UpdateOrder" method="post">
+            <label class="label">Order ID </label> 
+            <input type="OrderId" class="field" name="OrderId">
+            <br>
+             
+             <label class="label">Order Name </label> 
+            <input type="orderName" class="field" name="orderName">
+             <br>
+
+             <label class="label">Order Price </label> 
+            <input type="orderPrice" class="field" name="orderPrice">
+             <br>
+
+            <label class="label">Customer's Address</label> 
+            <input type="userAddress" class="field" name="userAddress">
+            <br>
+             <label class="label">Credit Card Number</label> 
+            <input type="creditCardNo" class="field" name="creditCardNo">
+             <br>
+                <input type="submit" style="background-color:#DE2D3A;margin-left:45px;border-radius:5px;color:#fff;width:110px;height:40px" value="Update Order">
+                <input type="hidden" name="type" value="update">
+            </form>
+           
+            <br>
+            <br>
+            <br>
+            </center>
+
+    
+            
+        </article>
+         </section>
+        
+        

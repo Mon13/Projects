@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductCatalog>
+    <product id="001" retailer="BestBuy">
+        <type>SmartPhone</type>
+        <image>SM_APPLE.jpg</image>
+        <name>IPhone 7</name>
+        <condition>New</condition>
+        <price>800</price>
+        <accessories>
+            <accessory>Charger</accessory>
+            </accessories>
+    </product>
+    <product id="002" retailer="BestBuy">
+        <type>SmartPhone</type>
+        <image>SM_SAMSUNG.jpg</image>
+        <name>SAMSUNG S EDGE</name>
+        <condition >New</condition>
+        <price>550</price>
+        <accessories>
+            <accessory>Ear phones</accessory>
+             </accessories>
+        </product>
+        <product id="003" retailer="BestBuy">
+        <type>SmartPhone</type>
+        <image>SM_SONY.jpg</image>
+        <name>SONY EXPERIA</name>
+        <condition>New</condition>
+        <price>400</price>
+    </product>
+    <product id="004" retailer="BestBuy">
+        <type>Tablet</type>
+        <image>tab_APPLE.jpg</image>
+        <name>APPLE iPAD</name>
+        <condition>New</condition>
+        <price>350</price>
+    </product>
+    <product id="005" retailer="BestBuy">
+        <type>Tablet</type>
+        <image>tab_LG.jpg</image>
+        <name>LG TAB3</name>
+        <condition>New</condition>
+        <price>300</price>
+    </product>
+    <product id="006" retailer="BestBuy">
+        <type>Tablet</type>
+        <image>tab_ASUS</image>
+        <name>ASUS 3</name>
+        <condition>New</condition>
+        <price>250</price>
+    </product>
+    <product id="007" retailer="BestBuy">
+        <type>TV</type>
+        <image>TV_SAMSUNG.jpg</image>
+        <name>SMART TV 2</name>
+        <condition>New</condition>
+        <price>250</price>
+    </product>
+    <product id="008" retailer="BestBuy">
+        <type>TV</type>
+        <image>TV_SHARP.jpg</image>
+        <name>SHARP 3</name>
+        <condition>New</condition>
+        <price>200</price>
+    </product>
+    <product id="009" retailer="BestBuy">
+        <type>TV</type>
+        <image>TV_LG.jpg</image>
+        <name>SMART TV</name>
+        <condition>New</condition>
+        <price>300</price>
+    </product>
+    <product id="010" retailer="BestBuy">
+        <type>Laptop</type>
+        <image>LAP_DELL.jpg</image>
+        <name>DELL 456</name>
+        <condition>New</condition>
+        <price>700</price>
+    </product>
+    <product id="011" retailer="BestBuy">
+        <type>Laptop</type>
+        <image>LAP_LG.jpg</image>
+        <name>LG i87</name>
+        <condition>New</condition>
+        <price>600</price>
+    </product>
+    <product id="012" retailer="BestBuy">
+        <type>Laptop</type>
+        <image>LAP_APPLE.jpg</image>
+        <name>MAC BOOK</name>
+        <condition>New</condition>
+        <price>900</price>
+    </product>
+</ProductCatalog>

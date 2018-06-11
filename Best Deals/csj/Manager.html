@@ -1,0 +1,78 @@
+<div id="body">
+
+
+
+        <section id="content">
+
+	   <article class="expanded">
+            <center>
+           <h3>Products can be added, deleted and modified below </h3>
+            <br>
+            <form action="AddProduct" method = "post">
+             <label class="label">Product ID </label> 
+            <input type="productid" class="field" name="productid">
+            <br>
+            <form action="AddProduct.jsp" method = "post">
+             <label class="label">Retailers </label> 
+            <input type="retailers" class="field" name="retailers">
+             <br>
+             <label class="label">Product Type</label> 
+            <input type="producttype" class="field" name="producttype">
+             <br>
+             <label class="label">Product Image </label> 
+            <input type="productimage" class="field" name="productimage">
+             <br>
+             <label class="label">Product Name </label> 
+            <input type="productname" class="field" name="productname">
+             <br>
+             <label class="label">Product Condition</label> 
+            <input type="productcondition" class="field" name="productcondition">
+             <br>
+             <label class="label">Product Price </label> 
+            <input type="productprice" class="field" name="productprice">
+            <br>
+                <input type="submit" style="background-color:#DE2D3A;margin-left:45px;border-radius:5px;color:#fff;width:110px;height:40px" value="Add Product">
+                <input type="hidden" name="type" value="add">
+            </form>
+             <br>
+            <br>
+            <br>
+            <br>
+            <form action="DeleteProduct" method = "get">
+             <label class="label">ProductName </label> 
+            <input type="productname" class="field" name="productname">
+            <br>
+                <input type="submit" style="background-color:#DE2D3A;margin-left:45px;border-radius:5px;color:#fff;width:110px;height:40px" value="Delete Product">
+              
+                <input type="hidden" name="productname"/>
+            </form>
+           
+            <br>
+            <br>
+            <br>
+            <form action="UpdateProduct" method = "post">
+             <label class="label">Product Id </label> 
+            <input type="productid" class="field" name="productid">
+             <br>
+            <label class="label">Product Name </label> 
+            <input type="productname" class="field" name="productname">
+            <br>
+            <label class="label">Product Price </label> 
+            <input type="productprice" class="field" name="productprice">
+            <br>
+             <label class="label">Product Condition</label> 
+            <input type="productcondition" class="field" name="productcondition">
+             <br>
+                <input type="submit" style="background-color:#DE2D3A;margin-left:45px;border-radius:5px;color:#fff;width:110px;height:40px" value="Update Product">
+                <input type="hidden" name="type" value="update">
+            </form>
+           
+            <br>
+            <br>
+            <br>
+            </center>
+
+    
+            
+        </article>
+        </section>
